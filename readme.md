@@ -1,12 +1,6 @@
 
 # Example of Javascript Async operations with Promise.all
 
-<style>
-table{
-    width: 10%;
-}
-</style>
-
 Promise Reject | Promise Resolve
 -------------- | -------------
 ![Javascript Promise Reject](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises.jpg "Example Reject") | ![Javascript Promise Resolve](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises-resolve.jpg "Example Resolve")
