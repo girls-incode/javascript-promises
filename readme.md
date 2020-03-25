@@ -1,6 +1,10 @@
 
 # Program example on how to use Javascript Async operations with Promise.all
 
+![Javascript Promise Reject](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises.jpg "Example Reject")
+
+![Javascript Promise Resolve](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises-resolve.jpg "Example Resolve")
+
 Make a list of N top brand names for a specific user based
 on his/her preferences followgin these rules:
 
