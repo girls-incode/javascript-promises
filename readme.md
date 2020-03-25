@@ -1,5 +1,5 @@
 
-# Program example on how to use Javascript Async operations with Promise.all
+# Example of Javascript Async operations with Promise.all
 
 ![Javascript Promise Reject](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises.jpg "Example Reject")
 
