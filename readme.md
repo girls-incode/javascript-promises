@@ -1,6 +1,12 @@
 
 # Example of Javascript Async operations with Promise.all
 
+<style>
+table{
+    width: 10%;
+}
+</style>
+
 Promise Reject | Promise Resolve
 -------------- | -------------
 ![Javascript Promise Reject](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises.jpg "Example Reject") | ![Javascript Promise Resolve](https://github.com/girls-incode/javascript-promises/blob/master/javascript-es6-async-promises-resolve.jpg "Example Resolve")
@@ -22,7 +28,9 @@ error.
 
 ## Main function:
 
-function solution(U, N);
+```javascript
+function solution(U, N)
+```
 
 Given user U and the number of brand names N, returns a Promise that should either be: 
 resolved with an array of exactly N top brand names for the given user,
@@ -54,13 +62,13 @@ getTopBrandsForGender(U.gender) returns:
 [{id: 3, name: "Kalvin klein"}, {id: 2, name: "Desigual"}, {id: 4, name: "Izarpure"}]
 
 1. For N=1
-The function solution(U, N) should return a promise which resolves with an array ["Adidas"]
+* The function solution(U, N) should return a promise which resolves with an array ["Adidas"]
 
 2. For N=3
-Promise should be resolved with an array ["Adidas", "Armani", "Kalvin klein"]
+* Promise should be resolved with an array ["Adidas", "Armani", "Kalvin klein"]
 
 3. For N=4
-Promise should be resolved with an array ["Adidas", "Armani", "Kalvin klein", "Desigual"]
+* Promise should be resolved with an array ["Adidas", "Armani", "Kalvin klein", "Desigual"]
 
 4. For N=5 
-Promise should be rejected with a CustomError.
+* Promise should be rejected with a CustomError.
