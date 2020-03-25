@@ -28,19 +28,19 @@ function solution(U, N)
 
 Given user U and the number of brand names N, returns a Promise that should either be: 
 resolved with an array of exactly N top brand names for the given user,
-in this format: ["Some Brand Name", "Other Brand Name", ...]; 
+in this format: **["Some Brand Name", "Other Brand Name", ...]** 
 or
-rejected with a CustomError with the message "Not enough data" (if there are fewer than N brand names to be listed, or both Promises (called in parallel): getLikedBrands and getTopBrandsForGender are rejected).
+rejected with a CustomError with the message "Not enough data" (if there are fewer than N brand names to be listed, or both Promises (called in parallel): **getLikedBrands** and **getTopBrandsForGender** are rejected).
 
 ## Data format
-The user parameter is an object of the following structure: { id: 123132, gender: "FEMALE" },
+The user parameter is an object of the following structure: **{ id: 123132, gender: "FEMALE" }**,
 where id is an integer and gender is a string containing either "FEMALE" or "MALE".
 
-The brand names liked by a specific user can be accessed by calling the function getLikedBrands(id).
-The list of brands for a gender can be obtained by calling the function getTopBrandsForGender(gender).
+The brand names liked by a specific user can be accessed by calling the function **getLikedBrands(id)**.
+The list of brands for a gender can be obtained by calling the function **getTopBrandsForGender(gender)**.
 
 The functions return Promises, that will be rejected or resolved with data in the following format:
-[ { id: 123, name: "Some Brand Name" }, { id: 456, name: "Other Brand Name"}, ... ]
+**[ { id: 123, name: "Some Brand Name" }, { id: 456, name: "Other Brand Name"}, ... ]**
 
 ## The result
 The order of the brand names in the result list should be the same as the order in the lists 
@@ -49,11 +49,11 @@ Brand names returned by both functions getLikedBrands(id) and getTopBrandsForGen
 combination, should appear in the result list only once.
 
 ## Examples
-Given user U, assume that getLikedBrands(U.id) returns:
-[{id: 1, name: "Adidas"}, {id: 5, name: "Armani"}]
+Given user U, assume that **getLikedBrands(U.id)** returns:
+**[{id: 1, name: "Adidas"}, {id: 5, name: "Armani"}]**
 and 
-getTopBrandsForGender(U.gender) returns: 
-[{id: 3, name: "Kalvin klein"}, {id: 2, name: "Desigual"}, {id: 4, name: "Izarpure"}]
+**getTopBrandsForGender(U.gender)** returns: 
+**[{id: 3, name: "Kalvin klein"}, {id: 2, name: "Desigual"}, {id: 4, name: "Izarpure"}]**
 
 1. For N=1
     * The function solution(U, N) should return a promise which resolves with an array ["Adidas"]
